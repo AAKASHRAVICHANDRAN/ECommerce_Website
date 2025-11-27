@@ -127,6 +127,12 @@ REST_FRAMEWORK = {
     ),
 }
 
+ALLOWED_HOSTS = [
+    'aakash02.pythonanywhere.com',
+    'www.aakash02.pythonanywhere.com',
+]
+
+
 # ------------------------------
 #   CORS
 # ------------------------------
@@ -149,3 +155,4 @@ STRIPE_PUBLIC_KEY = os.environ.get(
 #   FRONTEND URL
 # ------------------------------
 FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://127.0.0.1:8000')
+
