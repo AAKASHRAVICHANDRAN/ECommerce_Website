@@ -124,6 +124,17 @@
                 font-size: 0.95rem;
             }
         }
+
+        /* MOBILE FIX: make background images fit mobile screens */
+        @media (max-width: 600px) {
+        .slide {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000; /* optional, avoids empty gaps */
+            }
+        }
+
     </style>
 </head>
 
@@ -148,3 +159,4 @@
 
 </body>
 </html>
+
